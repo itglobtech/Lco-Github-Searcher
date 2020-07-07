@@ -9,7 +9,7 @@
         <div *ngIf="email" class="navbar-text float-left">
           {{ email }}
         </div>
-        <a class="nav-item nav-link" [routerLink]="['/']">Home</a>
+        <a class="nav-item nav-link" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" [routerLink]="['/']">Home</a>
         <a
           *ngIf="!email"
           class="nav-item nav-link"
